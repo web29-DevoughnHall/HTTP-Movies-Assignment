@@ -46,9 +46,14 @@ function UpdateMovie({ handleEditCount }){
             console.log(err);
         })
     }
+    const goBack = () => {
+        const id = match.params.id;
+        history.push(`/movies/${id}`);
+    }
 
     return(
         <div >
+            <button  onClick={goBack}>Back</button>
             {newValue && (
                 <form onSubmit={handleSubmit}>
 

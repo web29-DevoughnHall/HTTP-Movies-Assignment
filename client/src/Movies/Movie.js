@@ -46,7 +46,7 @@ function Movie({ addToSavedList, decreaseMovieCount }) {
     <div className='save-wrapper'>
       <MovieCard movie={movie} />
 
-      <button Click={deleteMovie}>Delete Movie</button>
+      <button onClick={deleteMovie}>Delete Movie</button>
       <button  onClick={saveMovie}>Save Movie</button>
       <button  onClick={editMovie}>Edit Movie</button>
     </div>
